@@ -1,0 +1,135 @@
+{
+  "contract_name": "SimpleBank",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "withdrawAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [
+        {
+          "name": "remainingBal",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "balance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "deposit",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "enroll",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "payable": false,
+      "type": "fallback"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "accountAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "LogDepositMade",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b60018054600160a060020a03191633600160a060020a03161790555b5b6102d58061003c6000396000f300606060405236156100515763ffffffff60e060020a6000350416632e1a7d4d81146100695780638da5cb5b14610091578063b69ef8a8146100c0578063b6b55f25146100e5578063e65f2a7e1461010d575b341561005c57600080fd5b6100675b600080fd5b565b005b341561007457600080fd5b61007f600435610132565b60405190815260200160405180910390f35b341561009c57600080fd5b6100a46101d5565b604051600160a060020a03909116815260200160405180910390f35b34156100cb57600080fd5b61007f6101e4565b60405190815260200160405180910390f35b34156100f057600080fd5b61007f600435610201565b60405190815260200160405180910390f35b341561011857600080fd5b61007f610286565b60405190815260200160405180910390f35b600160a060020a0333166000908152602081905260408120548290106101b457600160a060020a033316600081815260208190526040908190208054859003905583156108fc0290849051600060405180830381858888f1935050505015156101b457600160a060020a03331660009081526020819052604090208054830190555b5b50600160a060020a0333166000908152602081905260409020545b919050565b600154600160a060020a031681565b600160a060020a0333166000908152602081905260409020545b90565b33600160a060020a03811660009081526020819052604080822080548501905590917fa8126f7572bb1fdeae5b5aa9ec126438b91f658a07873f009d041ae690f3a19391849051600160a060020a03909216825260208201526040908101905180910390a150600160a060020a0333166000908152602081905260409020545b919050565b600160a060020a03331660009081526020819052604090206103e8908190555b905600a165627a7a7230582063865c1bd5c08bbb6dfe04b5a9ff2ee81e6aeaa41fda3c02055ec3f4eee7a9530029",
+  "networks": {
+    "1502219544056": {
+      "events": {
+        "0xa8126f7572bb1fdeae5b5aa9ec126438b91f658a07873f009d041ae690f3a193": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "accountAddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "LogDepositMade",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xb675bd9c6c2864c5be8db1cb45422aa4ef3f5c4b",
+      "updated_at": 1502219645499
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1505672272955
+}
